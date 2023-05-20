@@ -1,16 +1,18 @@
 # scanner_qr
 
-A new Flutter project.
+Mi primer Proyecto creado Con FLUTTER.
 
-## Getting Started
+## Aplicación de escaneo de código QR y generador de código QR hecho con flutter
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<div style="display: flex;">
+  <h5>VERSION 1.0.0</h5>
+  <img src="reame/parte1.png" alt="version 1" style="margin-right: 10px">
+  <img src="reame/parte2.png" alt="version 1" style="margin-right: 10px">
+  <img src="reame/parte3.png" alt="version 1" style="margin-right: 10px">
+  <br>
+  <img src="reame/parte4.png" alt="version 1" style="margin-right: 10px">
+  <img src="reame/parte5.png" alt="version 1" style="margin-right: 10px">
+  <img src="reame/parte6.1.png" alt="version 1" style="margin-right: 10px">
+</div>
+<h3><b>Realizado por:</b> Fabrizio Barrios Saavedra (RFBS19)</h3>
+<img src="reame/foter.jpg" width="200" alt="avatar">
