@@ -6,6 +6,7 @@ Mi primer Proyecto creado Con FLUTTER.
 
 <div style="display: flex;">
   <h4>Video de la Aplicacion</h4>
+  <video src="reame/pasos.mp4" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;"></video>
   <img src="reame/pasos.mp4" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
   <br>
   <h5>VERSION 1.1.0</h5>
