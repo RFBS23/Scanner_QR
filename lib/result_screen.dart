@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:scanner_qr/qr_Scanner.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ResultScreen extends StatelessWidget {
   final String code;
   final Function() closeScreen;
-
   const ResultScreen(
       {super.key, required this.closeScreen, required this.code});
 
@@ -85,6 +85,16 @@ class ResultScreen extends StatelessWidget {
                 ),
                 onPressed: () {
                   Clipboard.setData(ClipboardData(text: code));
+                  Fluttertoast.showToast(
+                    msg: "Enlace copiado Correctamente",
+                    toastLength: Toast.LENGTH_SHORT,
+                    gravity: ToastGravity.BOTTOM,
+                    timeInSecForIosWeb: 1,
+                    backgroundColor: Colors.green,
+                    textColor: Colors.black87,
+                    fontSize: 16,
+                  );
+                  print(code);
                 },
                 child: const Text(
                   "Copiar",
