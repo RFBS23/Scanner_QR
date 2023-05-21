@@ -6,7 +6,7 @@ Mi primer Proyecto creado Con FLUTTER.
 
 <div style="display: flex;">
   <h4>Video de la Aplicacion</h4>
-  <img src=" https://github.com/RFBS23/Scanner_QR/assets/86460528/e9d3857c-2258-4daf-ad41-f62e0bd17d59 " alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
+  https://github.com/RFBS23/Scanner_QR/assets/86460528/e9d3857c-2258-4daf-ad41-f62e0bd17d59
   <br>
   <h5>VERSION 1.1.0</h5>
   <img src="reame/parte12.jpg" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
