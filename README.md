@@ -5,7 +5,11 @@ Mi primer Proyecto creado Con FLUTTER.
 ## Aplicación de escaneo de código QR y generador de código QR hecho con flutter
 
 <div style="display: flex;">
-  
+  <h4>Video de la Aplicacion</h4>
+  <a class="py-2" align="center">
+    <img src="reame/pasos.gif" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
+  </a>
+  <br>
   <h5>VERSION 1.1.0</h5>
   <img src="reame/parte12.jpg" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
   <img src="reame/parte6.2.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
