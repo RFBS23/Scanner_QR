@@ -51,7 +51,7 @@ class _QRScannerState extends State<QRScanner> {
         iconTheme: const IconThemeData(color: Colors.black87),
         centerTitle: true,
         title: const Text(
-          "Escannear QR",
+          "Escaner QR",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,

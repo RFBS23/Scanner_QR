@@ -26,7 +26,7 @@ class ResultScreen extends StatelessWidget {
             )),
         centerTitle: true,
         title: const Text(
-          "Escannear QR",
+          "Escaner QR",
           style: TextStyle(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
