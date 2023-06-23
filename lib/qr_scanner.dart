@@ -36,7 +36,8 @@ class _QRScannerState extends State<QRScanner> {
                 });
                 controller.toggleTorch();
               },
-              icon: Icon(Icons.flashlight_on_rounded, color: isFlashOn ? Colors.green: Colors.grey)),
+              icon: Icon(Icons.flashlight_on_rounded,
+                  color: isFlashOn ? Colors.green : Colors.grey)),
           IconButton(
               onPressed: () {
                 setState(() {
@@ -44,7 +45,8 @@ class _QRScannerState extends State<QRScanner> {
                 });
                 controller.switchCamera();
               },
-              icon: Icon(Icons.camera_front_rounded, color:isFrontCamera ? Colors.green:  Colors.grey)),
+              icon: Icon(Icons.camera_front_rounded,
+                  color: isFrontCamera ? Colors.green : Colors.grey)),
         ],
         iconTheme: const IconThemeData(color: Colors.black87),
         centerTitle: true,
@@ -117,15 +119,17 @@ class _QRScannerState extends State<QRScanner> {
             ),
             Expanded(
                 child: Container(
-              alignment: Alignment.center,
+                  alignment: Alignment.center,
               child: Text(
-                "Developed by Fabrizio B.S.",
+                  textAlign:  TextAlign.center,
+                "Developed by Fabrizio B.S. \n Version: 1.1.0",
                 style: TextStyle(
                   color: Colors.black87,
                   fontSize: 18,
                   letterSpacing: 1,
                 ),
               ),
+
             )),
           ],
         ),
