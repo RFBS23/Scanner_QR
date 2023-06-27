@@ -113,7 +113,9 @@ class _QRScannerState extends State<QRScanner> {
                       }
                     },
                   ),
-                  QRScannerOverlay(color: Colors.black.withOpacity(0.5)),
+                  QRScannerOverlay(
+                    overlayColor: Colors.black26.withOpacity(0.5)
+                  ),
                 ],
               ),
             ),
