@@ -1,31 +1,16 @@
-# scanner_qr
+# scanner
 
-Mi primer Proyecto creado Con FLUTTER.
+A new Flutter project.
 
-## Aplicación de escaneo de código QR y generador de código QR hecho con flutter
+## Getting Started
 
-<div style="display: flex;">
-  <h4>Video de la Aplicacion</h4>
-  <a class="py-2" align="center">
-    <img src="reame/pasos.gif" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  </a>
-  <br>
-  <h5>VERSION 1.1.0</h5>
-  <img src="reame/parte12.jpg" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte6.2.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte8.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <br>
-  <img src="reame/parte9.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte10.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte11.png" alt="version 1.1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <h5>VERSION 1.0.0</h5>
-  <img src="reame/parte1.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte2.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte3.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <br>
-  <img src="reame/parte4.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte5.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
-  <img src="reame/parte6.1.png" alt="version 1" style="margin-right: 10px; width: 250px; height: 500px;">
-</div>
-<h3><b>Aplicacion Desarrollada por:</b> Fabrizio Barrios Saavedra (RFBS19 - fabridev)</h3>
-<img src="reame/foter.jpg" width="200" alt="avatar">
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

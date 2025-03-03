@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
-import 'package:qr_scanner_overlay/qr_scanner_overlay.dart';
-import 'package:scanner_qr/result_Screen.dart';
+import 'package:scanner/result_screen.dart';
 
 const bgColor = Color(0xfffafafa);
 
@@ -64,10 +63,10 @@ class _QRScannerState extends State<QRScanner> {
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            Expanded(
+            const Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     "Por favor coloque el código QR en el área",
                     style: TextStyle(
@@ -96,25 +95,42 @@ class _QRScannerState extends State<QRScanner> {
               flex: 4,
               child: Stack(
                 children: [
-                  MobileScanner(
-                    controller: controller,
-                    allowDuplicates: true,
-                    onDetect: (barcode, args) {
-                      if (!isScanCompleted) {
-                        String code = barcode.rawValue ?? '---';
-                        isScanCompleted = true;
-                        Navigator.push(
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(20), // Bordes redondeados
+                    child: MobileScanner(
+                      controller: controller,
+                      onDetect: (barcodeCapture) {
+                        final List<Barcode> barcodes = barcodeCapture.barcodes;
+                        if (barcodes.isNotEmpty && !isScanCompleted) {
+                          String code = barcodes.first.rawValue ?? '---';
+                          setState(() {
+                            isScanCompleted = true;
+                          });
+                          Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ResultScreen(
-                                      closeScreen: closeScreen,
-                                      code: code,
-                                    )));
-                      }
-                    },
+                              builder: (context) => ResultScreen(
+                                closeScreen: closeScreen,
+                                code: code,
+                              ),
+                            ),
+                          );
+                        }
+                      },
+                    ),
                   ),
-                  QRScannerOverlay(
-                    overlayColor: Colors.black26.withOpacity(0.5)
+                  Positioned.fill(
+                    child: Align(
+                      alignment: Alignment.center,
+                      child: Container(
+                        width: 250, // Tamaño del marco del escáner
+                        height: 250,
+                        decoration: BoxDecoration(
+                          border: Border.all(color: const Color.fromARGB(255, 44, 87, 230), width: 4),
+                          borderRadius: BorderRadius.circular(20), // Bordes redondeados
+                        ),
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -122,9 +138,9 @@ class _QRScannerState extends State<QRScanner> {
             Expanded(
                 child: Container(
                   alignment: Alignment.center,
-              child: Text(
+              child: const Text(
                   textAlign:  TextAlign.center,
-                "Developed by Fabrizio B.S. \n Version: 1.1.0",
+                "Developed by Fabrizio B.S. \n Version: 2.1.0",
                 style: TextStyle(
                   color: Colors.black87,
                   fontSize: 18,
