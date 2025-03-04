@@ -4,7 +4,7 @@
     <application
         android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
-        android:label="Scanner QR"
+        android:label="FabriScan"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

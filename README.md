@@ -1,16 +1,23 @@
-# scanner
+# 🚀 FabriScan - Escanea Códigos QR  
 
-A new Flutter project.
+FabriQR es una aplicación desarrollada en **Flutter** que permite **escanear códigos QR y códigos de barras** de manera rápida y sencilla. Con una interfaz intuitiva y minimalista, facilita la lectura de códigos para abrir enlaces, acceder a información y más.
 
-## Getting Started
+## 📸 Características  
+✔️ Escaneo rápido de códigos QR y códigos de barras.  
+✔️ Interfaz moderna y minimalista.  
+✔️ Copia y apertura de enlaces escaneados en el navegador.  
 
-This project is a starting point for a Flutter application.
+## Soporte
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de [fabriziobarrios92@gmail.com](mailto:fabriziobarrios92@gmail.com).
+- **Autor**: Fabrizio Barrios Saavedra.
+- **Portafolio**: [Mi Portafolio](https://portafolio-fabridev.vercel.app).
+- **Mi Landing Page**: [FabriDev](https://fabridev.vercel.app/es)
 
-A few resources to get you started if this is your first Flutter project:
+## Licencia
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.txt](LICENSE.txt) para más detalles.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Desarrollador
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h3><b>Aplicación Desarrollada por:</b> Fabrizio Barrios Saavedra (<a href="https://portafolio-fabridev.vercel.app" target="_blank">RFBS23</a> - <a href="https://fabridev.vercel.app/es" target="_blank">FabriDev</a>)</h3>
+
+<img src="img/footer.jpg" width="150" alt="avatar">

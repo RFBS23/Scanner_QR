@@ -125,7 +125,7 @@ class ResultScreen extends StatelessWidget {
                   backgroundColor: Colors.green,
                 ),
                 onPressed: () {
-                  abrirEnlace(code); // Llama a la función abrirEnlace
+                  abrirEnlace(code);
                 },
                 child: const Text(
                   "Abrir Enlace",
