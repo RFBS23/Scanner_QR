@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'FavoritosManager.dart'; // Ajusta la ruta si hace falta
 
 class FavoritosScreen extends StatefulWidget {
-  const FavoritosScreen({Key? key}) : super(key: key);
+  const FavoritosScreen({super.key});
 
   @override
   State<FavoritosScreen> createState() => _FavoritosScreenState();
@@ -30,7 +30,11 @@ class _FavoritosScreenState extends State<FavoritosScreen> {
     await _favoritosManager.eliminarFavorito(favorito);
     await _cargarFavoritos();
     ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(content: Text('Favorito eliminado')),
+      SnackBar(content: Text('Favorito eliminado',
+        style: TextStyle(
+          fontFamily: 'Varela',
+        ),
+      )),
     );
   }
 
@@ -39,17 +43,29 @@ class _FavoritosScreenState extends State<FavoritosScreen> {
     return Scaffold(
       backgroundColor: bgColor,
       appBar: AppBar(
-        title: const Text('Favoritos'),
+        title: const Text('Favoritos',
+          style: TextStyle(
+            fontFamily: 'Varela',
+          ),
+        ),
       ),
       body: _favoritos.isEmpty
-          ? const Center(child: Text('No hay favoritos guardados'))
+          ? const Center(child: Text('No hay favoritos guardados',
+              style: TextStyle(
+                fontFamily: 'Varela',
+              ),
+            ))
           : ListView.builder(
               itemCount: _favoritos.length,
               itemBuilder: (context, index) {
                 final favorito = _favoritos[index];
                 return ListTile(
                   leading: const Icon(Icons.favorite, color: Colors.redAccent),
-                  title: Text(favorito),
+                  title: Text(favorito,
+                    style: TextStyle(
+                      fontFamily: 'Varela',
+                    ),
+                  ),
                   trailing: IconButton(
                     icon: const Icon(Icons.delete, color: Colors.grey),
                     onPressed: () => _eliminarFavorito(favorito),

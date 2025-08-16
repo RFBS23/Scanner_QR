@@ -33,11 +33,19 @@ class EnlacesGuardadosScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: bgColor,
       appBar: AppBar(
-        title: const Text("Enlaces guardados"),
+        title: const Text("Enlaces guardados",
+          style: TextStyle(
+            fontFamily: 'Varela',
+          ),
+        ),
       ),
       body: enlaces.isEmpty
         ? const Center(
-            child: Text("No hay enlaces guardados"),
+            child: Text("No hay enlaces guardados",
+              style: TextStyle(
+                fontFamily: 'Varela',
+              ),
+            ),
           )
         : ListView.builder(
             itemCount: enlaces.length,
@@ -46,7 +54,11 @@ class EnlacesGuardadosScreen extends StatelessWidget {
               final esUrl = _esUrlValida(enlace);
               return ListTile(
                 leading: Icon(esUrl ? Icons.link : Icons.document_scanner),
-                title: Text(enlace),
+                title: Text(enlace,
+                  style: TextStyle(
+                    fontFamily: 'Varela',
+                  ),
+                ),
                 onTap: esUrl
                   ? () => _abrirEnlace(context, enlace)
                   : null, // no hace nada si no es URL válida

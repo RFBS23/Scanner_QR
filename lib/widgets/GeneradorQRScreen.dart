@@ -79,14 +79,19 @@ class _GeneradorQRScreenState extends State<GeneradorQRScreen> {
     return Scaffold(
       backgroundColor: bgColor,
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(title: const Text("Generador de Códigos")),
+      appBar: AppBar(title: const Text(
+        "Generador de Códigos", 
+        style: TextStyle(
+          fontFamily: 'Varela',
+        ),
+      )),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Column(
           children: [
             const Text(
               "¿Qué deseas generar?",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, fontFamily: 'Varela'),
             ),
             const SizedBox(height: 12),
             Column(
@@ -116,6 +121,8 @@ class _GeneradorQRScreenState extends State<GeneradorQRScreen> {
                         "Código QR",
                         style: TextStyle(
                           fontSize: 20,
+                          fontFamily: 'Varela',
+                          fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 0, 0, 0),
                         ),
                       ),
@@ -147,6 +154,8 @@ class _GeneradorQRScreenState extends State<GeneradorQRScreen> {
                         "Código de Barras",
                         style: TextStyle(
                           fontSize: 20,
+                          fontFamily: 'Varela',
+                          fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 0, 0, 0),
                         ),
                       ),
@@ -160,6 +169,9 @@ class _GeneradorQRScreenState extends State<GeneradorQRScreen> {
               controller: _controller,
               decoration: const InputDecoration(
                 labelText: "Texto o número",
+                labelStyle: TextStyle(
+                  fontFamily: 'Varela',
+                ),
                 border: OutlineInputBorder(),
               ),
               keyboardType: TextInputType.text,
@@ -167,11 +179,11 @@ class _GeneradorQRScreenState extends State<GeneradorQRScreen> {
             const SizedBox(height: 16),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 72, 98, 241), // color de fondo
-                foregroundColor: Colors.white, // color del texto y el icono
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12), // opcional
+                backgroundColor: const Color.fromARGB(255, 72, 98, 241),
+                foregroundColor: Colors.white,
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12), // bordes redondeados
+                  borderRadius: BorderRadius.circular(12),
                 ),
               ),
               onPressed: () {
@@ -179,7 +191,11 @@ class _GeneradorQRScreenState extends State<GeneradorQRScreen> {
                   _data = _controller.text.trim();
                 });
               },
-              child: const Text("Generar Código"),
+              child: const Text("Generar Código",
+                style: TextStyle(
+                  fontFamily: 'Varela',
+                ),
+              ),
             ),
             const SizedBox(height: 32),
             if (_data.isNotEmpty)
@@ -214,8 +230,12 @@ class _GeneradorQRScreenState extends State<GeneradorQRScreen> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
-                icon: const Icon(Icons.download),
-                label: const Text("Descargar imagen"),
+                icon: const Icon(Icons.download_rounded),
+                label: const Text("Descargar imagen",
+                  style: TextStyle(
+                    fontFamily: 'Varela',
+                  ),
+                ),
                 onPressed: _guardarImagen,
               ),
             )

@@ -7,6 +7,7 @@ import 'package:scanner/widgets/enlaces_guardados_screen.dart';
 import 'package:scanner/widgets/GeneradorQRScreen.dart';
 import 'package:scanner/widgets/FavoritosScreen.dart';
 import 'dart:io';
+import 'package:google_fonts/google_fonts.dart';
 
 const bgColor = Color(0xfffafafa);
 
@@ -61,13 +62,13 @@ class _QRScannerState extends State<QRScanner> {
         📜 Licencia de uso – FabriScan
         © 2025 FabriDev Software Solutions E.I.R.L.
 
-        Está estrictamente prohibido:
-        • Copiar, distribuir o reproducir total o parcialmente la aplicación.
-        • Modificar, descompilar o realizar ingeniería inversa.
+        Esta estrictamente prohibido:
+        • Copiar, distribuir o reproducir total o parcialmente la aplicacion.
+        • Modificar, descompilar o realizar ingenieria inversa.
         • Vender, sublicenciar o usar con fines comerciales.
-        • Usar el contenido, diseño o código en otros proyectos.
+        • Usar el contenido, diseño o codigo en otros proyectos.
 
-        El uso está limitado a fines personales y no comerciales.
+        El uso esta limitado a fines personales y no comerciales.
         La aplicación se proporciona 'TAL CUAL', sin garantías.
       """;
 
@@ -127,6 +128,7 @@ class _QRScannerState extends State<QRScanner> {
               child: Text(
                 'Menú',
                 style: TextStyle(
+                  fontFamily: 'Varela',
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1.2,
@@ -136,14 +138,24 @@ class _QRScannerState extends State<QRScanner> {
             const Divider(),
             ListTile(
               leading: const Icon(Icons.qr_code_scanner, color: Colors.blue),
-              title: const Text('Escanear nuevo código'),
+              title: const Text(
+                'Escanear nuevo código',
+                style: TextStyle(
+                  fontFamily: 'Varela',
+                ),
+              ),
               onTap: () {
                 Navigator.pop(context);
               },
             ),
             ListTile(
               leading: const Icon(Icons.link, color: Colors.blueAccent),
-              title: const Text('Ver enlaces guardados'),
+              title: const Text(
+                'Ver enlaces guardados',
+                style: TextStyle(
+                  fontFamily: 'Varela',
+                ),
+              ),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(
@@ -158,7 +170,12 @@ class _QRScannerState extends State<QRScanner> {
             ),
             ListTile(
               leading: const Icon(Icons.qr_code, color: Colors.green),
-              title: const Text('Generador QR'),
+              title: const Text(
+                'Generador QR',
+                style: TextStyle(
+                  fontFamily: 'Varela',
+                ),
+              ),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (_) => GeneradorQRScreen()));
@@ -166,7 +183,12 @@ class _QRScannerState extends State<QRScanner> {
             ),
             ListTile(
               leading: const Icon(Icons.favorite, color: Colors.redAccent),
-              title: const Text('Favoritos'),
+              title: const Text(
+                'Favoritos',
+                style: TextStyle(
+                  fontFamily: 'Varela',
+                ),
+              ),
               onTap: () {
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (_) => FavoritosScreen()));
@@ -174,7 +196,12 @@ class _QRScannerState extends State<QRScanner> {
             ),
             ListTile(
               leading: const Icon(Icons.delete_forever, color: Colors.red),
-              title: const Text('Borrar historial'),
+              title: const Text(
+                'Borrar historial',
+                style: TextStyle(
+                  fontFamily: 'Varela',
+                ),
+              ),
               onTap: () {
                 showDialog(
                   context: context,
@@ -186,15 +213,29 @@ class _QRScannerState extends State<QRScanner> {
                         borderRadius: BorderRadius.circular(15),
                       ),
                       elevation: 24,
-                      title: const Text("Eliminar historial"),
+                      title: const Text(
+                        "Eliminar historial",
+                        style: TextStyle(
+                          fontFamily: 'Varela',
+                        ),
+                      ),
                       content: const Text(
-                          "¿Estás seguro de que deseas eliminar todo el historial de escaneos?"),
+                        "¿Estás seguro de que deseas eliminar todo el historial de escaneos?",
+                        style: TextStyle(
+                          fontFamily: 'Varela',
+                        ),
+                      ),
                       actions: [
                         TextButton(
                           onPressed: () {
                             Navigator.pop(context);
                           },
-                          child: const Text("Cancelar"),
+                          child: const Text(
+                            "Cancelar",
+                            style: TextStyle(
+                              fontFamily: 'Varela',
+                            ),
+                          ),
                         ),
                         TextButton(
                           onPressed: () {
@@ -212,7 +253,12 @@ class _QRScannerState extends State<QRScanner> {
                           style: TextButton.styleFrom(
                             foregroundColor: Colors.red,
                           ),
-                          child: const Text("Eliminar"),
+                          child: const Text(
+                            "Eliminar",
+                            style: TextStyle(
+                              fontFamily: 'Varela',
+                            ),
+                          ),
                         ),
                       ],
                     );
@@ -225,7 +271,12 @@ class _QRScannerState extends State<QRScanner> {
 
             ListTile(
               leading: const Icon(Icons.info, color: Colors.teal),
-              title: const Text('Acerca de la app'),
+              title: const Text(
+                'Acerca de la app',
+                style: TextStyle(
+                  fontFamily: 'Varela',
+                ),
+              ),
               onTap: () {
                 Navigator.pop(context);
                 showDialog(
@@ -233,7 +284,14 @@ class _QRScannerState extends State<QRScanner> {
                   builder: (BuildContext context) {
                     return AlertDialog(
                       backgroundColor: bgColor,
-                      title: const Text("Acerca de FabriScan"),
+                      title: const Text(
+                        "Acerca de FabriScan",
+                        style: TextStyle(
+                          fontFamily: 'Varela',
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
                       content: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -248,6 +306,10 @@ class _QRScannerState extends State<QRScanner> {
                               "• Usar el contenido, diseño o código en otros proyectos.\n\n"
                               "El uso está limitado a fines personales y no comerciales.\n"
                               "La aplicación se proporciona 'TAL CUAL', sin garantías.",
+                              textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontFamily: 'Varela'
+                              ),
                             ),
                           ],
                         ),
@@ -257,14 +319,25 @@ class _QRScannerState extends State<QRScanner> {
                           style: TextButton.styleFrom(
                             foregroundColor: Color.fromARGB(255, 72, 98, 241),
                           ),
-                          child: const Text("Descargar licencia"),
+                          child: const Text("Descargar licencia",
+                          style: TextStyle(
+                            fontFamily: 'Varela',
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
                           onPressed: () => guardarLicencia(context),
                         ),
                         TextButton(
                           style: TextButton.styleFrom(
-                            foregroundColor: Color.fromARGB(255, 72, 98, 241),
+                            foregroundColor: Color.fromARGB(255, 241, 72, 72),
                           ),
-                          child: const Text("Cerrar"),
+                          child: const Text(
+                            "Cerrar",
+                            style: TextStyle(
+                              fontFamily: 'Varela',
+                              fontWeight: FontWeight.bold
+                            ),
+                          ),
                           onPressed: () => Navigator.pop(context),
                         ),
                       ],
@@ -280,9 +353,9 @@ class _QRScannerState extends State<QRScanner> {
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Color.fromARGB(221, 0, 0, 0)),
         centerTitle: true,
-        title: const Text(
+        title: Text(
           "Escáner QR",
-          style: TextStyle(
+          style: GoogleFonts.varela(
             color: Colors.black87,
             fontWeight: FontWeight.bold,
             letterSpacing: 1,
@@ -326,7 +399,9 @@ class _QRScannerState extends State<QRScanner> {
                 children: [
                   Text(
                     "Por favor coloque el código QR en el área",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
+                      fontFamily: 'Varela',
                       color: Colors.black87,
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -336,9 +411,11 @@ class _QRScannerState extends State<QRScanner> {
                   SizedBox(height: 10),
                   Text(
                     "El escaneo se iniciará automáticamente",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
+                      fontFamily: 'Varela',
                       color: Colors.black54,
-                      fontSize: 16,
+                      fontSize: 15,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1,
                     ),
@@ -397,13 +474,14 @@ class _QRScannerState extends State<QRScanner> {
             Expanded(
               child: Container(
                 alignment: Alignment.center,
-                child: const Text(
+                child: Text(
+                  "Developed by FabriDev Software Solutions\nVersion: 9.8.0",
                   textAlign: TextAlign.center,
-                  "Developed by Fabrizio B.S. \nVersion: 2.1.0",
-                  style: TextStyle(
+                  style: GoogleFonts.varela(
                     color: Colors.black87,
-                    fontSize: 18,
+                    fontSize: 15,
                     letterSpacing: 1,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),

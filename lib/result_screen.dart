@@ -75,16 +75,17 @@ class ResultScreen extends StatelessWidget {
           style: TextStyle(
             color: textColor,
             fontWeight: FontWeight.bold,
+            fontFamily: 'Varela',
             letterSpacing: 1,
           ),
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.favorite_border, color: textColor),
+            icon: Icon(Icons.favorite_border, color: Color.fromARGB(255, 255, 0, 0)),
             onPressed: () async {
               await agregarAFavoritos(code);
               Fluttertoast.showToast(
-                msg: "Agregado a favoritos",
+                msg: "Agregado a favoritos ❤️",
                 toastLength: Toast.LENGTH_SHORT,
                 gravity: ToastGravity.BOTTOM,
                 backgroundColor: Colors.black87,
@@ -110,19 +111,21 @@ class ResultScreen extends StatelessWidget {
               "Resultado del escaneo",
               style: TextStyle(
                 fontSize: 16,
+                fontFamily: 'Varela',
                 color: subTextColor,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1,
               ),
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
 
             Text(
               code,
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 16,
+                fontFamily: 'Varela',
                 color: textColor,
                 letterSpacing: 1,
               ),
@@ -150,6 +153,7 @@ class ResultScreen extends StatelessWidget {
                   "Copiar",
                   style: TextStyle(
                     fontSize: 16,
+                    fontFamily: 'Varela',
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1,
@@ -172,6 +176,7 @@ class ResultScreen extends StatelessWidget {
                   "Abrir Enlace",
                   style: TextStyle(
                     fontSize: 16,
+                    fontFamily: 'Varela',
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     letterSpacing: 1,
