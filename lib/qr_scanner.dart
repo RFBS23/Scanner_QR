@@ -475,7 +475,7 @@ class _QRScannerState extends State<QRScanner> {
               child: Container(
                 alignment: Alignment.center,
                 child: Text(
-                  "Developed by FabriDev Software Solutions\nVersion: 9.8.0",
+                  "Developed by FabriDev Software Solutions\nVersion: 2.2.0",
                   textAlign: TextAlign.center,
                   style: GoogleFonts.varela(
                     color: Colors.black87,
